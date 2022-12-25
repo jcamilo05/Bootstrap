@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style type="text/css">
+      [class^=col]{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        background-color: #6c757d;
+        color: white;
+        border: 1px solid white;
+      }
+      [data-example="row-height"] .row{
+        border: 0.5px solid #6c757d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container border">
+      <h3 class="component-variation text-muted">Equal width</h3>
+      <p>Grid with auto-layout and equal width</p>
+        <div class="row">
+          <div class="col border">.col</div>
+          <div class="col border">.col</div>
+        </div>
+        <div class="row">
+          <div class="col border">.col</div>
+          <div class="col border">.col</div>
+          <div class="col border">.col</div>
+        </div>
+
+        <div class="row">
+          <h3 class="component-variation text-muted">One column width</h3>
+          <p>One column with set column</p>
+        <div class="col border">.col</div>
+          <div class="col-7 border">.col-7</div>
+          <div class="col border">.col</div>
+        </div>
+
+        <div class="row">
+          <h3 class="component-variation text-muted">Responsive</h3>
+          <p>Advanced grid changing layout across different device sizes: use device prefixed</p>
+          <div class="col-12 col-md-6 col-lg-3 border">.col-12 .col-md-6 .col-lg-3</div>
+          <div class="col-12 col-md-6 col-lg-3 border">.col-12 .col-md-6 .col-lg-3</div>
+          <div class="col-12 col-md-6 col-lg-3 border">.col-12 .col-md-6 .col-lg-3</div>
+          <div class="col-12 col-md-6 col-lg-3 border">.col-12 .col-md-6 .col-lg-3</div>
+        </div>
+
+        <div class="container" data-example="row-height">
+          <h3 class="component-variation text-muted">Row</h3>
+          <p>Grid with vertical alignment on .row using flex utilities</p>
+          <div class="row align-items-start">
+            <div class="col">.col</div>
+            <div class="col">.col</div>
+            <div class="col">.col</div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col">.col</div>
+            <div class="col">.col</div>
+            <div class="col">.col</div>
+          </div>
+          <div class="row align-items-end">
+            <div class="col">.col</div>
+            <div class="col">.col</div>
+            <div class="col">.col</div>
+          </div>
+        </div>
+        <div class="container" data-example="row-height">
+          <h3 class="componenent-variation text-muted">Horizontal Alignment</h3>
+          <p>Grid with horizontal alignment on .row using flex utilities</p>
+          <div class="code-live">
+            <div class="row justify-content-start">
+              <div class="col-3">.col-3</div>
+              <div class="col-3">.col-3</div>
+              <div class="col-3">.col-3</div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-3">.col-3</div>
+              <div class="col-3">.col-3</div>
+              <div class="col-3">.col-3</div>
+            </div>
+            <div class="row justify-content-end">
+              <div class="col-3">.col-3</div>
+              <div class="col-3">.col-3</div>
+              <div class="col-3">.col-3</div>
+            </div>
+            <div class="row justify-content-around">
+              <div class="col-3">.col-3</div>
+              <div class="col-3">.col-3</div>
+              <div class="col-3">.col-3</div>
+            </div>
+            <div class="row justify-content-between">
+              <div class="col-3">.col-3</div>
+              <div class="col-3">.col-3</div>
+              <div class="col-3">.col-3</div>
+            </div>
+            <div class="row justify-content-evenly">
+              <div class="col-3">.col-3</div>
+              <div class="col-3">.col-3</div>
+              <div class="col-3">.col-3</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </body>
+</html>

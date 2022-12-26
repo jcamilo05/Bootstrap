@@ -149,4 +149,59 @@ The following chunk, shows the 6 tags available to set the horizaontal aligments
 ```
 ![](./img/notes/evenly.JPG)
 
+## Images
 
+### Responsive images
+
+Images in bootstrap are made resposive with  
+
+``` html
+<img class="img-fluid">
+```
+
+## Forms
+
+The tag to create a form in is <form> and within this tag is placed label and input, label has normally a **for** and a **class**, and input also has **class** but also a type, placeholder (which is the name inside writing field, and) and id) the following piece of code shows a small form who has two labels and tw inputs.
+
+
+```html
+<fieldset>
+  <div class="mb-3">
+    <label for="inputEmail" class="form-label">Email input label</label>
+    <input type="email" class="form-control" placeholder="Email input placeholder" id="inputEmail">
+  </div>
+  <div class="mb-3">
+    <label for="inputPassword" class="form-label">Password input label</label>
+    <input type="email" class="form-control" placeholder="Password input placeholder" id="inputPassword">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</fieldset>
+
+```
+![](./img/notes/fieldset.JPG)
+
+There is a way of place a text below the input box, this is usful to give information to the person who must fill up the form. basically to add this helper you must write the attribute named `aria-describedby `  to the input, then add a <p> below with the id assigned to **aria-describedby**, the following example show that.
+
+
+```html
+<fieldset class="border">
+  <div class="mb-3">
+    <legend>Legend</legend>
+    <label for="inputTextStacked" class="form-label">Text input label</label>
+    <input type="text" class="form-control" placeholder="Text input placeholder" id="inputTextStacked" aria-describedby="inputTextStackedHelp">
+    <p id="inputTextStackedHelp" class="form-text">Here goes the helper to fill the input</p>
+  </div>
+  <div class="mb-3">
+    <label for="inputPassword" class="form-label">Password input label</label>
+    <input type="email" class="form-control" placeholder="Password input placeholder" id="inputPassword" aria-describedby="inputPasswordHelper">
+    <p id="" class="form-text">Here goes another helper but to the password</p>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</fieldset>
+
+```
+
+![](./img/notes/helper.png)
+
+
+## Checks and radios

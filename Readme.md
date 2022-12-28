@@ -205,3 +205,26 @@ There is a way of place a text below the input box, this is usful to give inform
 
 
 ## Checks and radios
+
+To create a radio is similar to create whatever form, its mean it must be typed input and label, but in **type** must be write "radio" and in **class** must be write form-check-input, the same aplies to checkbox but un **type** must be write checkbox. the following to examples show us how to create a checkbox and a radio.
+
+```html
+<div class="form-check">
+  <input type="checkbox" class="form-check-input" id="checkDefault1">
+  <label class="form-check-label" for="checkDefault1">Default checkbox</label>
+</div>
+
+<div class="form-check">
+  <input type="radio" class="form-check-input" id="checkDefault2">
+  <label class="form-check-label" for="checkDefault2">Checked checkbox</label>
+</div>
+
+```
+![](./img/notes/check.JPG)
+
+# Components
+
+## Accordion
+
+Accordion is a collapsable that is used to hide or show things.
+

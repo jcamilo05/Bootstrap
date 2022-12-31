@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css.map">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
   </head>
   <body>
     <div class="code-example mb-5">
@@ -26,9 +26,27 @@
               </div>
             </div>
           </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingDefaultTwo">
+              <button type="button" class="accordion-button" data-bs-toggle="collapse"
+              data-bs-target="#collapseDefaultTwo" aria-expanded="true" aria-controls="collapseDefaultTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="collapseDefaultTwo" class="accordion-collapse collapse show" aria-labelledby="headingDefaultTwo"
+            data-bs-parent="#accordionDefault">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a velit sodales, 
+                semper purus lacinia, venenatis diam. Sed erat sem, blandit ut purus id, ornare congue nunc. 
+                Fusce nunc purus, luctus id fermentum at, semper ut ligula.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  
 </html>

@@ -256,3 +256,26 @@ The following chunk of code shows one accordion.
 The following shows the previous code rendered
 
 ![](./img/notes/accordion.JPG)
+
+## Buttons
+
+Bootstrap have predefined the following 8 buttons
+```html
+<div class="code-example mb-5">
+  <h3 class="component-variation text-muted">Default</h3>
+  <div class="code-live">
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+  </div>
+</div>
+```
+The previous buttons looks like the following
+
+![](./img/notes/button.JPG)
+

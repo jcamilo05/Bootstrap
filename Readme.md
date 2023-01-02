@@ -279,3 +279,229 @@ The previous buttons looks like the following
 
 ![](./img/notes/button.JPG)
 
+## Cards
+
+Card is a flexible and extensible content container, a card is basically a container with differents types of cards atrtibutes, the following examples show some of the most basics cards.
+
+### Basic card
+
+The following card, is the most basic card, but has just a text inside it.
+
+```html
+<div class="card w-50">
+    <div class="card body">
+      <p class="card-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies sed velit ut
+        sollicitudin. In commodo, neque quis commodo scelerisque, urna nisi feugiat neque, et 
+        facilisis sem purus a dui. Maecenas tincidunt, elit ac sollicitudin dignissim, ex felis 
+        dictum ipsum, in imperdiet ipsum leo sollicitudin.
+      </p>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies sed velit ut
+        sollicitudin. In commodo, neque quis commodo scelerisque, urna nisi feugiat neque, et 
+        facilisis sem purus a dui. Maecenas tincidunt, elit ac sollicitudin dignissim, ex felis 
+        dictum ipsum, in imperdiet ipsum leo sollicitudin.
+      </p>
+    </div>
+</div
+
+```
+
+![](./img/card/basic.JPG)
+
+### Card title and subtitle
+
+As we see in the previous code, a card has a `card body` but inside card body, we can place a title and a subtitle,
+the following chunks shows how it works.
+
+```html
+<div class="h5 text-muted mt-3">Title</h4>
+  <div class="card w-50">
+    <div class="card-body">
+      <h4 class="card-title">Card title</h4>
+    </div>
+  </div>
+  <h4 class="h5 text-muted mt-3">Subtitle</h4>
+  <div class="card w-50">
+    <div class="card-body">
+      <h6 class="card-subtitle">Card subtitle</h6> 
+  </div>
+</div>
+```
+
+![](./img/card/title.JPG)
+
+### Card Image top
+
+To make a card with a top image, yo must place inside a card attribute a `<img>` with a class named **card-img-top**  and then place a normal card-body, and inside it can you place the attributes wished, like for example car-title, card-subtitle, card-text...
+
+Teh following chunk of code shows a basic card image top.
+
+```html
+<div class="card w-50">
+    <img src="./img/card/400x200.png" alt="card image in the top" class="card-img-top">
+    <div class="card-body">
+        <div class="card-title">Card title</div> 
+        <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Donec ultricies sed velit ut sollicitudin. In commodo, neque quis commodo scelerisque, 
+        urna nisi feugiat neque, et facilisis sem purus a dui. Maecenas tincidunt, elit ac 
+        sollicitudin dignissim, ex felis dictum ipsum, in imperdiet ipsum leo sollicitudin.
+        </div>
+    </div>
+</div>
+```
+
+![](./img/card/top.JPG)
+
+### Card navigation
+
+To create a nav navigation, inside a card must be typed a `class="card-header"` and a `class="card-body`, but inisde the class header is needed set a list item but with the following attribute, `nav nav-tabs card-header-tabs` must be placed inside `<ul>` tag, and inside each `<li>` must be placed `class="nav-item"`
+
+The following chunk of code, shows the previously said.
+
+```html
+<div class="card w-50">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <a href="#" class="nav-link active">Active</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link disable">Disable</a>
+        </li>
+      </ul>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Donec ultricies sed velit ut sollicitudin. In commodo, neque quis commodo 
+        scelerisque, urna nisi feugiat neque, et facilisis sem purus a dui. Maecenas tincidunt, 
+        elit ac sollicitudin dignissim, ex felis dictum ipsum, in imperdiet ipsum leo sollicitudin.
+      </p>
+    </div>
+</div>
+```
+The previous code, looks like the following
+
+
+![](./img/card/nav.JPG)
+
+### Grid cards
+
+Responsives cards can be created with grid system `class= row-cols-*-*`  the following code, shows a 4 responsive cards.
+
+```html
+
+<div class="code-live">
+  <h4 class="h5 text-muted mt-3">Default</h4>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4 g-4 mb-4">
+    <div class="col">
+      <img class="card-img-top" src="./img/card/300x150.png" alt="card image">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies sed 
+          velit ut sollicitudin. In commodo, neque quis commodo scelerisque, urna nisi 
+          feugiat neque, et facilisis sem purus a dui. Maecenas tincidunt, elit ac 
+          sollicitudin dignissim, ex felis dictum ipsum, in imperdiet ipsum leo sollicitudin.
+        </p>
+      </div>
+    </div>
+    <div class="col">
+      <img class="card-img-top" src="./img/card/300x150.png" alt="card image">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies sed 
+          velit ut sollicitudin. In commodo, neque quis commodo scelerisque, urna nisi 
+          feugiat neque, et facilisis sem purus a dui. Maecenas tincidunt, elit ac 
+          sollicitudin dignissim, ex felis dictum ipsum, in imperdiet ipsum leo sollicitudin.
+        </p>
+      </div>
+    </div>
+    <div class="col">
+      <img class="card-img-top" src="./img/card/300x150.png" alt="card image">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies sed 
+          velit ut sollicitudin. In commodo, neque quis commodo scelerisque, urna nisi 
+          feugiat neque, et facilisis sem purus a dui. Maecenas tincidunt, elit ac 
+          sollicitudin dignissim, ex felis dictum ipsum, in imperdiet ipsum leo sollicitudin.
+        </p>
+      </div>
+    </div>
+    <div class="col">
+      <img class="card-img-top" src="./img/card/300x150.png" alt="card image">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies sed 
+          velit ut sollicitudin. In commodo, neque quis commodo scelerisque, urna nisi 
+          feugiat neque, et facilisis sem purus a dui. Maecenas tincidunt, elit ac 
+          sollicitudin dignissim, ex felis dictum ipsum, in imperdiet ipsum leo sollicitudin.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+```
+ 
+### Small
+
+![](./img/card/nav.JPG)
+
+### Medium
+
+![](./img/card/medium.JPG)
+
+### Large
+
+![](./img/card/large.JPG)
+
+## Carousel
+
+A carousel is made up basically of three tags, the firs one `class="carousel slide"` which is the most outer tag, inside the previous tag must be placed `class="carousel-inner"` and inside the last one, each slide must be tagged with a class called `class="carousel-item"`.One of the carousel inner must be placed with an atribute of the active, otherwise not carousel will be show.
+
+The following is a carousel which also has indicators
+
+```html
+<div class="code-live">
+  <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active">
+      </button>
+      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/carousel/1200x600-success.png" alt="First slide" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/carousel/1200x600-danger.png" alt="Second slide" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/carousel/1200x600-warning.png" alt="Third slide" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/carousel/1200x600-info.png" alt="Fourth slide" class="d-block w-100">
+      </div>
+    </div>
+  </div>
+  <button type="button" class="carousel-control-prev" data-bs-target="#carouselControls"
+  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button type="button" class="carousel-control-next" data-bs-target="#carouselControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+```

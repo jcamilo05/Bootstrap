@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=width-device, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Bootstrap 5</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="col-12 col-lg-9">
+        <h2 class="component display-4">Carousel</h2>
+        <hr>
+      </div>
+
+      <div class="code-example mb-5">
+        <h3 class="component-variation text-muted">Slides Only</h3>
+        <div class="code-live">
+          <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active">
+              </button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/carousel/1200x600-success.png" alt="First slide" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carousel/1200x600-danger.png" alt="Second slide" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carousel/1200x600-warning.png" alt="Third slide" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carousel/1200x600-info.png" alt="Fourth slide" class="d-block w-100">
+              </div>
+            </div>
+          </div>
+          <button type="button" class="carousel-control-prev" data-bs-target="#carouselControls"
+          data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button type="button" class="carousel-control-next" data-bs-target="#carouselControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

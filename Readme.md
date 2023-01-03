@@ -505,3 +505,23 @@ The following is a carousel which also has indicators
   </button>
 </div>
 ```
+
+### Dropdown
+
+A dropdown is like a list box that shows only one item when inactive. To create a dropdown, first it must be write a div with the class `class="dropdown"` and inside it, a dropdown  class called `class=dropdown-menu` and then inside each class, a class called dropdown-item `class=dropdown-item` 
+
+The following chunk of code, shows a basic dropdown.
+
+```html
+
+<div class="dropdown ">
+    <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownButton" 
+    data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+    <div class="dropdown-menu" aria-labelledby="dropdownButton">
+        <a href="#" class="dropdown-item">First item</a>
+        <a href="#" class="dropdown-item">Second item</a>
+        <a href="#" class="dropdown-item">Third item</a>
+    </div>
+</div>
+```
+

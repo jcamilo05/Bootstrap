@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lag="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=width-device, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="col-12 col-lg-9">
+      <h2 class="component display-4">Collapse</h2>
+      <hr>
+    </div>
+    <div class="code-example mb-5">
+      <h3 class="component-variation text-muted">Link</h3>
+      <p>Show and hide other content with link using "href" attribute</p>
+      <div class="code-live">
+        <a href="#hrefCollapse" class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false"
+        aria-controls="hrefCollapse">Link with href</a>
+        <div class="collapse" id="hrefCollapse">
+          <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+        </div>
+      </div>
+      <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Link 1</a></li>
+              <li><a class="dropdown-item" href="#">Link 2</a></li>
+              <li><a class="dropdown-item" href="#">Link 3</a></li>
+            </ul>
+          </div>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

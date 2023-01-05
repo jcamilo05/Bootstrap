@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=width-device, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
+
+    <title>Bootstrap 5</title>
+  </head>
+  <body>
+    <div class="col-12 col-lg-9">
+      <h2 class="component display-4">Offcanvas</h2>
+      <hr>
+
+      <div class="code-example mb-5">
+        <h3 class="component-variation text-muted">Trigger</h3>
+        <div class="code-live">
+          <h4 class="h5 text-muted mt-3">Button trigger</h4>
+          <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTrigger"
+          aria-controls="offcanvasTrigger">Open offcanvas</button>
+           <h4 class="h5 text-muted mt-3">Link trigger</h4>
+           <a href="#offcanvasTrigger" role="button" class="btn btn-primary" data-bs-toggle="offcanvas"
+           aria-controls="offcanvasTrigger">Open canvas</a>
+           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasTrigger" aria-labelledby="offcanvas">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-header" id="offcanvasTriggerLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="close">
+                </button>
+              </div>
+              <div class="offcanvas-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

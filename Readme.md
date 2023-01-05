@@ -24,17 +24,17 @@ To have columns with equal width just type col as a class, so for example the ne
 
 ```html
 <div class="container border">
-    <h3 class="component-variation text-muted">Equal width</h3>
-    <p>Grid with auto-layout and equal width</p>
-    <div class="row">
-      <div class="col border">.col</div>
-      <div class="col border">.col</div>
-    </div>
-    <div class="row">
-      <div class="col border">.col</div>
-      <div class="col border">.col</div>
-      <div class="col border">.col</div>
-    </div>
+<h3 class="component-variation text-muted">Equal width</h3>
+<p>Grid with auto-layout and equal width</p>
+<div class="row">
+<div class="col border">.col</div>
+<div class="col border">.col</div>
+</div>
+<div class="row">
+<div class="col border">.col</div>
+<div class="col border">.col</div>
+<div class="col border">.col</div>
+</div>
 </div>     
 ```
 
@@ -66,10 +66,10 @@ The columns can be setted to resize depending on the size screen, so for example
 
 ```html
 <div class="row">
-    <div class="col-12 col-md-6 col-lg-3 border">.col-12 .col-md-6 .col-lg-3</div>
-    <div class="col-12 col-md-6 col-lg-3 border">.col-12 .col-md-6 .col-lg-3</div>
-    <div class="col-12 col-md-6 col-lg-3 border">.col-12 .col-md-6 .col-lg-3</div>
-    <div class="col-12 col-md-6 col-lg-3 border">.col-12 .col-md-6 .col-lg-3</div>
+<div class="col-12 col-md-6 col-lg-3 border">.col-12 .col-md-6 .col-lg-3</div>
+<div class="col-12 col-md-6 col-lg-3 border">.col-12 .col-md-6 .col-lg-3</div>
+<div class="col-12 col-md-6 col-lg-3 border">.col-12 .col-md-6 .col-lg-3</div>
+<div class="col-12 col-md-6 col-lg-3 border">.col-12 .col-md-6 .col-lg-3</div>
 </div>
 
 ```
@@ -94,7 +94,7 @@ The following screenshots shows the previous paragraph.
 
 ```css
 div[class^="test"]{
-    background: #fff;
+background: #fff;
 ```
 The meaning of the previous notation is set a background to all divs which have a class name of test
 
@@ -166,17 +166,17 @@ The tag to create a form is `<form>` and inside this tag is put label and input,
 
 ```html
 <form>
-    <fieldset>
-      <div class="mb-3">
-        <label for="inputEmail" class="form-label">Email input label</label>
-        <input type="email" class="form-control" placeholder="Email input placeholder" id="inputEmail">
-      </div>
-      <div class="mb-3">
-        <label for="inputPassword" class="form-label">Password input label</label>
-        <input type="email" class="form-control" placeholder="Password input placeholder" id="inputPassword">
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </fieldset>
+<fieldset>
+<div class="mb-3">
+<label for="inputEmail" class="form-label">Email input label</label>
+<input type="email" class="form-control" placeholder="Email input placeholder" id="inputEmail">
+</div>
+<div class="mb-3">
+<label for="inputPassword" class="form-label">Password input label</label>
+<input type="email" class="form-control" placeholder="Password input placeholder" id="inputPassword">
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</fieldset>
 <form>
 ```
 ![](./img/notes/fieldset.JPG)
@@ -186,18 +186,18 @@ There is a way of place a text below the input box, this is useful to give infor
 
 ```html
 <fieldset class="border">
-  <div class="mb-3">
-    <legend>Legend</legend>
-    <label for="inputTextStacked" class="form-label">Text input label</label>
-    <input type="text" class="form-control" placeholder="Text input placeholder" id="inputTextStacked" aria-describedby="inputTextStackedHelp">
-    <p id="inputTextStackedHelp" class="form-text">Here goes the helper to fill the input</p>
-  </div>
-  <div class="mb-3">
-    <label for="inputPassword" class="form-label">Password input label</label>
-    <input type="email" class="form-control" placeholder="Password input placeholder" id="inputPassword" aria-describedby="inputPasswordHelper">
-    <p id="" class="form-text">Here goes another helper but to the password</p>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+<div class="mb-3">
+<legend>Legend</legend>
+<label for="inputTextStacked" class="form-label">Text input label</label>
+<input type="text" class="form-control" placeholder="Text input placeholder" id="inputTextStacked" aria-describedby="inputTextStackedHelp">
+<p id="inputTextStackedHelp" class="form-text">Here goes the helper to fill the input</p>
+</div>
+<div class="mb-3">
+<label for="inputPassword" class="form-label">Password input label</label>
+<input type="email" class="form-control" placeholder="Password input placeholder" id="inputPassword" aria-describedby="inputPasswordHelper">
+<p id="" class="form-text">Here goes another helper but to the password</p>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
 </fieldset>
 
 ```
@@ -211,13 +211,13 @@ To create a radio is similar to create whatever form, its mean it must be typed 
 
 ```html
 <div class="form-check">
-  <input type="checkbox" class="form-check-input" id="checkDefault1">
-  <label class="form-check-label" for="checkDefault1">Default checkbox</label>
+<input type="checkbox" class="form-check-input" id="checkDefault1">
+<label class="form-check-label" for="checkDefault1">Default checkbox</label>
 </div>
 
 <div class="form-check">
-  <input type="radio" class="form-check-input" id="checkDefault2">
-  <label class="form-check-label" for="checkDefault2">Checked checkbox</label>
+<input type="radio" class="form-check-input" id="checkDefault2">
+<label class="form-check-label" for="checkDefault2">Checked checkbox</label>
 </div>
 
 ```
@@ -235,21 +235,21 @@ The following chunk of code shows one accordion.
 
 ```html
 <div class="accordion" id="accordionDefault">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingDefaultOne">
-      <button type="button" class="accordion-button" data-bs-toggle="collapse" 
-      data-bs-target="#collapseDefaultOne" aria-expanded="true" aria-controls="collapseDefaultOne">
-      Accordion Item #1
-      </button>
-    </h2>
-  <div id="collapseDefaultOne" class="accordion-collapse collapse show" aria-labelledby="headingDefaultOne"
-   data-bs-parent="#accordionDefault">
-    <div class="accordion-body">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a velit sodales, 
-      semper purus lacinia, venenatis diam. Sed erat sem, blandit ut purus id, ornare congue nunc. 
-      Fusce nunc purus, luctus id fermentum at, semper ut ligula
-  </div>
- </div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingDefaultOne">
+<button type="button" class="accordion-button" data-bs-toggle="collapse" 
+data-bs-target="#collapseDefaultOne" aria-expanded="true" aria-controls="collapseDefaultOne">
+Accordion Item #1
+</button>
+</h2>
+<div id="collapseDefaultOne" class="accordion-collapse collapse show" aria-labelledby="headingDefaultOne"
+data-bs-parent="#accordionDefault">
+<div class="accordion-body">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a velit sodales, 
+semper purus lacinia, venenatis diam. Sed erat sem, blandit ut purus id, ornare congue nunc. 
+Fusce nunc purus, luctus id fermentum at, semper ut ligula
+</div>
+</div>
 </div>
 
 ```
@@ -262,17 +262,17 @@ The following shows the previous code rendered
 Bootstrap have predefined the following 8 buttons
 ```html
 <div class="code-example mb-5">
-  <h3 class="component-variation text-muted">Default</h3>
-  <div class="code-live">
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-info">Info</button>
-    <button type="button" class="btn btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>
-  </div>
+<h3 class="component-variation text-muted">Default</h3>
+<div class="code-live">
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+</div>
 </div>
 ```
 The previous buttons looks like the following
@@ -289,20 +289,20 @@ The following card, is the most basic card, but has just a text inside it.
 
 ```html
 <div class="card w-50">
-    <div class="card body">
-      <p class="card-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies sed velit ut
-        sollicitudin. In commodo, neque quis commodo scelerisque, urna nisi feugiat neque, et 
-        facilisis sem purus a dui. Maecenas tincidunt, elit ac sollicitudin dignissim, ex felis 
-        dictum ipsum, in imperdiet ipsum leo sollicitudin.
-      </p>
-      <p class="card-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies sed velit ut
-        sollicitudin. In commodo, neque quis commodo scelerisque, urna nisi feugiat neque, et 
-        facilisis sem purus a dui. Maecenas tincidunt, elit ac sollicitudin dignissim, ex felis 
-        dictum ipsum, in imperdiet ipsum leo sollicitudin.
-      </p>
-    </div>
+<div class="card body">
+<p class="card-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies sed velit ut
+sollicitudin. In commodo, neque quis commodo scelerisque, urna nisi feugiat neque, et 
+facilisis sem purus a dui. Maecenas tincidunt, elit ac sollicitudin dignissim, ex felis 
+dictum ipsum, in imperdiet ipsum leo sollicitudin.
+</p>
+<p class="card-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies sed velit ut
+sollicitudin. In commodo, neque quis commodo scelerisque, urna nisi feugiat neque, et 
+facilisis sem purus a dui. Maecenas tincidunt, elit ac sollicitudin dignissim, ex felis 
+dictum ipsum, in imperdiet ipsum leo sollicitudin.
+</p>
+</div>
 </div
 
 ```
@@ -316,16 +316,16 @@ the following chunks shows how it works.
 
 ```html
 <div class="h5 text-muted mt-3">Title</h4>
-  <div class="card w-50">
-    <div class="card-body">
-      <h4 class="card-title">Card title</h4>
-    </div>
-  </div>
-  <h4 class="h5 text-muted mt-3">Subtitle</h4>
-  <div class="card w-50">
-    <div class="card-body">
-      <h6 class="card-subtitle">Card subtitle</h6> 
-  </div>
+<div class="card w-50">
+<div class="card-body">
+<h4 class="card-title">Card title</h4>
+</div>
+</div>
+<h4 class="h5 text-muted mt-3">Subtitle</h4>
+<div class="card w-50">
+<div class="card-body">
+<h6 class="card-subtitle">Card subtitle</h6> 
+</div>
 </div>
 ```
 
@@ -339,15 +339,15 @@ Teh following chunk of code shows a basic card image top.
 
 ```html
 <div class="card w-50">
-    <img src="./img/card/400x200.png" alt="card image in the top" class="card-img-top">
-    <div class="card-body">
-        <div class="card-title">Card title</div> 
-        <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Donec ultricies sed velit ut sollicitudin. In commodo, neque quis commodo scelerisque, 
-        urna nisi feugiat neque, et facilisis sem purus a dui. Maecenas tincidunt, elit ac 
-        sollicitudin dignissim, ex felis dictum ipsum, in imperdiet ipsum leo sollicitudin.
-        </div>
-    </div>
+<img src="./img/card/400x200.png" alt="card image in the top" class="card-img-top">
+<div class="card-body">
+<div class="card-title">Card title</div> 
+<div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Donec ultricies sed velit ut sollicitudin. In commodo, neque quis commodo scelerisque, 
+urna nisi feugiat neque, et facilisis sem purus a dui. Maecenas tincidunt, elit ac 
+sollicitudin dignissim, ex felis dictum ipsum, in imperdiet ipsum leo sollicitudin.
+</div>
+</div>
 </div>
 ```
 
@@ -361,28 +361,28 @@ The following chunk of code, shows the previously said.
 
 ```html
 <div class="card w-50">
-    <div class="card-header">
-      <ul class="nav nav-tabs card-header-tabs">
-        <li class="nav-item">
-          <a href="#" class="nav-link active">Active</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Link</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link disable">Disable</a>
-        </li>
-      </ul>
-    </div>
-    <div class="card-body">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Donec ultricies sed velit ut sollicitudin. In commodo, neque quis commodo 
-        scelerisque, urna nisi feugiat neque, et facilisis sem purus a dui. Maecenas tincidunt, 
-        elit ac sollicitudin dignissim, ex felis dictum ipsum, in imperdiet ipsum leo sollicitudin.
-      </p>
-    </div>
+<div class="card-header">
+<ul class="nav nav-tabs card-header-tabs">
+<li class="nav-item">
+<a href="#" class="nav-link active">Active</a>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">Link</a>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link disable">Disable</a>
+</li>
+</ul>
+</div>
+<div class="card-body">
+<h4 class="card-title">Card title</h4>
+<p class="card-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Donec ultricies sed velit ut sollicitudin. In commodo, neque quis commodo 
+scelerisque, urna nisi feugiat neque, et facilisis sem purus a dui. Maecenas tincidunt, 
+elit ac sollicitudin dignissim, ex felis dictum ipsum, in imperdiet ipsum leo sollicitudin.
+</p>
+</div>
 </div>
 ```
 The previous code, looks like the following
@@ -397,61 +397,61 @@ Responsives cards can be created with grid system `class= row-cols-*-*`  the fol
 ```html
 
 <div class="code-live">
-  <h4 class="h5 text-muted mt-3">Default</h4>
-  <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4 g-4 mb-4">
-    <div class="col">
-      <img class="card-img-top" src="./img/card/300x150.png" alt="card image">
-      <div class="card-body">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies sed 
-          velit ut sollicitudin. In commodo, neque quis commodo scelerisque, urna nisi 
-          feugiat neque, et facilisis sem purus a dui. Maecenas tincidunt, elit ac 
-          sollicitudin dignissim, ex felis dictum ipsum, in imperdiet ipsum leo sollicitudin.
-        </p>
-      </div>
-    </div>
-    <div class="col">
-      <img class="card-img-top" src="./img/card/300x150.png" alt="card image">
-      <div class="card-body">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies sed 
-          velit ut sollicitudin. In commodo, neque quis commodo scelerisque, urna nisi 
-          feugiat neque, et facilisis sem purus a dui. Maecenas tincidunt, elit ac 
-          sollicitudin dignissim, ex felis dictum ipsum, in imperdiet ipsum leo sollicitudin.
-        </p>
-      </div>
-    </div>
-    <div class="col">
-      <img class="card-img-top" src="./img/card/300x150.png" alt="card image">
-      <div class="card-body">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies sed 
-          velit ut sollicitudin. In commodo, neque quis commodo scelerisque, urna nisi 
-          feugiat neque, et facilisis sem purus a dui. Maecenas tincidunt, elit ac 
-          sollicitudin dignissim, ex felis dictum ipsum, in imperdiet ipsum leo sollicitudin.
-        </p>
-      </div>
-    </div>
-    <div class="col">
-      <img class="card-img-top" src="./img/card/300x150.png" alt="card image">
-      <div class="card-body">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies sed 
-          velit ut sollicitudin. In commodo, neque quis commodo scelerisque, urna nisi 
-          feugiat neque, et facilisis sem purus a dui. Maecenas tincidunt, elit ac 
-          sollicitudin dignissim, ex felis dictum ipsum, in imperdiet ipsum leo sollicitudin.
-        </p>
-      </div>
-    </div>
-  </div>
+<h4 class="h5 text-muted mt-3">Default</h4>
+<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4 g-4 mb-4">
+<div class="col">
+<img class="card-img-top" src="./img/card/300x150.png" alt="card image">
+<div class="card-body">
+<h4 class="card-title">Card title</h4>
+<p class="card-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies sed 
+velit ut sollicitudin. In commodo, neque quis commodo scelerisque, urna nisi 
+feugiat neque, et facilisis sem purus a dui. Maecenas tincidunt, elit ac 
+sollicitudin dignissim, ex felis dictum ipsum, in imperdiet ipsum leo sollicitudin.
+</p>
+</div>
+</div>
+<div class="col">
+<img class="card-img-top" src="./img/card/300x150.png" alt="card image">
+<div class="card-body">
+<h4 class="card-title">Card title</h4>
+<p class="card-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies sed 
+velit ut sollicitudin. In commodo, neque quis commodo scelerisque, urna nisi 
+feugiat neque, et facilisis sem purus a dui. Maecenas tincidunt, elit ac 
+sollicitudin dignissim, ex felis dictum ipsum, in imperdiet ipsum leo sollicitudin.
+</p>
+</div>
+</div>
+<div class="col">
+<img class="card-img-top" src="./img/card/300x150.png" alt="card image">
+<div class="card-body">
+<h4 class="card-title">Card title</h4>
+<p class="card-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies sed 
+velit ut sollicitudin. In commodo, neque quis commodo scelerisque, urna nisi 
+feugiat neque, et facilisis sem purus a dui. Maecenas tincidunt, elit ac 
+sollicitudin dignissim, ex felis dictum ipsum, in imperdiet ipsum leo sollicitudin.
+</p>
+</div>
+</div>
+<div class="col">
+<img class="card-img-top" src="./img/card/300x150.png" alt="card image">
+<div class="card-body">
+<h4 class="card-title">Card title</h4>
+<p class="card-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies sed 
+velit ut sollicitudin. In commodo, neque quis commodo scelerisque, urna nisi 
+feugiat neque, et facilisis sem purus a dui. Maecenas tincidunt, elit ac 
+sollicitudin dignissim, ex felis dictum ipsum, in imperdiet ipsum leo sollicitudin.
+</p>
+</div>
+</div>
+</div>
 </div>
 
 ```
- 
+
 ### Small
 
 ![](./img/card/nav.JPG)
@@ -472,37 +472,37 @@ The following is a carousel which also has indicators
 
 ```html
 <div class="code-live">
-  <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active">
-      </button>
-      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"></button>
-      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./img/carousel/1200x600-success.png" alt="First slide" class="d-block w-100">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/carousel/1200x600-danger.png" alt="Second slide" class="d-block w-100">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/carousel/1200x600-warning.png" alt="Third slide" class="d-block w-100">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/carousel/1200x600-info.png" alt="Fourth slide" class="d-block w-100">
-      </div>
-    </div>
-  </div>
-  <button type="button" class="carousel-control-prev" data-bs-target="#carouselControls"
-  data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button type="button" class="carousel-control-next" data-bs-target="#carouselControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  </button>
+<div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active">
+</button>
+<button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"></button>
+<button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"></button>
+<button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="./img/carousel/1200x600-success.png" alt="First slide" class="d-block w-100">
+</div>
+<div class="carousel-item">
+<img src="./img/carousel/1200x600-danger.png" alt="Second slide" class="d-block w-100">
+</div>
+<div class="carousel-item">
+<img src="./img/carousel/1200x600-warning.png" alt="Third slide" class="d-block w-100">
+</div>
+<div class="carousel-item">
+<img src="./img/carousel/1200x600-info.png" alt="Fourth slide" class="d-block w-100">
+</div>
+</div>
+</div>
+<button type="button" class="carousel-control-prev" data-bs-target="#carouselControls"
+data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button type="button" class="carousel-control-next" data-bs-target="#carouselControls" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+</button>
 </div>
 ```
 
@@ -515,13 +515,126 @@ The following chunk of code, shows a basic dropdown.
 ```html
 
 <div class="dropdown ">
-    <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownButton" 
-    data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
-    <div class="dropdown-menu" aria-labelledby="dropdownButton">
-        <a href="#" class="dropdown-item">First item</a>
-        <a href="#" class="dropdown-item">Second item</a>
-        <a href="#" class="dropdown-item">Third item</a>
-    </div>
+<button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownButton" 
+data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+<div class="dropdown-menu" aria-labelledby="dropdownButton">
+<a href="#" class="dropdown-item">First item</a>
+<a href="#" class="dropdown-item">Second item</a>
+<a href="#" class="dropdown-item">Third item</a>
+</div>
 </div>
 ```
+### Navs and tabs
+
+A nav is horizontal menu, to create one there are two ways of doing that.
+
+1. add `<class="nav"` to a nav element, followed by `<class="nav-link">` for each `<a>` tag
+2. add `class="nav"` to a `<ul>` element, followed by `class="nav-item"` for each `<li>` and add `class="nav-link"`.
+
+Whichever tags picked the result will be the same, the follwing chunk of code an image show the previous said
+
+```html
+
+<div class="code-live">
+<ul class="nav">
+<li class="nav-item">
+<a href="#" class="nav-link active" aria-current="page">Active</a>
+</li>
+<li>
+<a href="#" class="nav-link">Link</a>
+</li>
+<a href="#" class="nav-link disabled" tabindex="-1" aria-disabled="true">Disable</a>
+</li>
+</ul>
+</div>
+```
+or 
+
+```html
+<div class="code-example mb-5">
+<h3 class="component-variation text-muted">Links</h3>
+<div class="code-live">
+<nav class="nav">
+<a href="#" class="nav-link active" aria-current="page">Active</a>
+<a href="#" class="nav-link">Link</a>
+<a href="#" class="nav-link disabled">Disable</a>
+</nav>
+</div>
+</div>
+```
+![](./img/card/nav_tab.JPG)
+
+## Navigation bar (Navbar)
+
+A navigation bar is a navigation header that is placed at the top of the page.
+The most basic navigation bar is made with a `<navi class=nav>` and inside it an unordered list with the class oh navbar-nav `<ul class=navbar-nav>`and in each list item a class of nav-item `<li class=nav-item>` and then inside each item an anchor tag with the class of nav-link `<a class=nav-link>`
+
+The following chunk of code, shows how to create a basic navbar
+
+```html
+<nav class="navbar navbar-light bg-light navbar-expand">
+<div class="container">
+<a href="#" class="navbar-brand">Navbar</a>
+<div class="collapse navbar-collapse">
+<ul class="navbar-nav">
+<li class="nav-item">
+  <a href="#" class="nav-link active" aria-current="page">Active</a>
+ </li>
+<li class="nav-item">
+  <a href="#" class="nav-link">Active</a>
+ </li>
+<li class="nav-item">
+  <a href="#" class="nav-link">Link</a>
+ </li>
+<li class="nav-item">
+  <a href="#" class="nav-link" tabindex="-1" aria-disable="true">Disable</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+```
+
+![](./img/nav/nav.JPG)
+
+#### Navbar collapsable
+Some times is useful to have a navbar which is raplaced by a button in small devices, to do so first must be created a nav with class navbar `<nav class="navbar">` then a div which must contain inside them the followngs tags.
+`<button>` this tag must have as attribute `class="navbar-toggler"`, `data-bs-toggle="collapse"` and `data-bs-target=#AnIdName`and inside the button to create ten icon one the following span `<span class="navbar-toggler-icon"></span>`when the previous is done, must be typed a simple navbar but with the id name which was set in the data-bs-target.
+
+The following chunk of code show a simple collapsable navbar
+
+```html
+<div class="navbar navbar-light bg-light navbar-expand-sm">
+    <div class="container">
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+      data-bs-target="#navbarResponsiveLeft" aria-controls="navbarResponsiveLeft">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="#" class="navbar-brand">Navbar</a>
+      <div class="collapse navbar-collapse" id="navbarResponsiveLeft">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">Active</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link disabled" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+```
+
+#### Small devices
+
+![](./img/nav/other_devices.JPG)
+
+### biggest than small devices
+
+
+![](./img/nav/small.JPG)
+
 

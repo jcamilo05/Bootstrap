@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=width-device, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="col-12 col-lg-9">
+      <h2 class="component display-4">Navs</h2>
+      <hr>
+      
+      <div class="code-example mb-5">
+        <h3 class="component-variation text-muted">Unordered list</h3>
+        <div class="code-live">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page">Active</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Link</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link disabled" tabindex="-1" aria-disabled="true">Disable</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="code-example mb-5">
+          <h3 class="component-variation text-muted">Links</h3>
+          <div class="code-live">
+            <nav class="nav">
+              <a href="#" class="nav-link active" aria-current="page">Active</a>
+              <a href="#" class="nav-link">Link</a>
+              <a href="#" class="nav-link disabled">Disable</a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="code-example mb-5">
+          <h3 class="component-variation text-muted">Horizontal alignment</h3>
+          <div class="code-live">
+            <h4 class="h5 text-muted mt-3">Centered</h4>
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">Active</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Link</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="code-example mb-5">
+            <h3 class="component-variation text-muted">Tabs</h3>
+            <div class="code-live">
+              <h4 class="h5 text-muted mt-3">Tabs</h4>
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="code-example mb-5">
+            <h3 class="component-variation text-muted">Tab panel with list</h3>
+            <div class="code-live">
+              <h4 class="h5 text-muted mt-3">Tabs</h4>
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button type="button" id="tabList" class="nav-link active" data-bs-toggle="tab"
+                  data-bs-target="#tabList-pane-1" role="tab" aria-controls="tabList-pane-1" aria-selected="false">
+                  Pane 1 
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button type="button" id="tabList" class="nav-link" data-bs-toggle="tab"
+                  data-bs-target="#tabList-pane-2" role="tab" aria-controls="tabList-pane-2" aria-selected="false">
+                  Pane 2 
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button type="button" id="tabList" class="nav-link" data-bs-toggle="tab"
+                  data-bs-target="#tabList-pane-3" role="tab" aria-controls="tabList-pane-3" aria-selected="false">
+                  Pane 3 
+                  </button>
+                </li>
+                <div class="tab-content">
+                  <div id="tabList-pane-1" class="tab-pane" role="tabpanel" aria-labelledby="tabList-1">
+                    <p>
+                      Panel 1:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                      in voluptate velit esse cillum dolore eu fugiat nulla pariatur 
+                    </p>
+                  </div>
+                  <div id="tabList-pane-2" class="tab-pane" role="tabpanel" aria-labelledby="tabList-2">
+                    <p>
+                      Panel 2:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                      in voluptate velit esse cillum dolore eu fugiat nulla pariatur 
+                    </p>
+                  </div>
+                  <div id="tabList-pane-3" class="tab-pane" role="tabpanel" aria-labelledby="tabList-2">
+                    <p>
+                      Panel 3:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                      in voluptate velit esse cillum dolore eu fugiat nulla pariatur 
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
